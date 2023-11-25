@@ -1,0 +1,311 @@
+.wrapper {
+  // margin: auto;
+  .main {
+    .main-content {
+      display: flex;
+      margin: auto;
+      padding: 80px 0;
+      justify-content: center;
+
+      @include for-size(mobile) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 511px;
+        gap: 30px;
+
+        @include for-size(tablet) {
+          display: flex;
+          gap: 20px;
+          width: 330px;
+        }
+
+        img {
+          display: none;
+          @include for-size(mobile) {
+            display: initial;
+          }
+        }
+
+        h1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          // flex: 1 0 0;
+          color: var(--White, #fff);
+          font-family: Work Sans;
+          font-size: 67px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 110%; /* 73.7px */
+          text-transform: capitalize;
+          @include for-size(tablet) {
+            color: var(--White, #fff);
+
+            /* H3 - Work Sans */
+            font-family: Work Sans;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 45.6px */
+            text-transform: capitalize;
+          }
+
+          @include for-size(mobile) {
+            color: var(--White, #fff);
+
+            /* H4 - Work Sans */
+            font-family: Work Sans;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 39.2px */
+            text-transform: capitalize;
+          }
+        }
+
+        p {
+          color: var(--White, #fff);
+          font-family: Work Sans;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 35.2px */
+          text-transform: capitalize;
+          @include for-size(tablet) {
+            color: var(--White, #fff);
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+          }
+        }
+        button {
+          display: flex;
+          height: 60px;
+          padding: 0px 50px;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 20px;
+          background: var(--Call-to-Action, #a259ff);
+          border: none;
+          width: 228px;
+
+          img {
+            display: initial;
+          }
+          @include for-size(tablet) {
+            display: flex;
+            height: 60px;
+            padding: 0px 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            background: var(--Call-to-Action, #a259ff);
+          }
+
+          @include for-size(mobile) {
+            display: flex;
+            height: 60px;
+            padding: 0px 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            align-self: stretch;
+            border-radius: 20px;
+            background: var(--Call-to-Action, #a259ff);
+            // width: calc(100%-10px);
+          }
+
+          a {
+            color: #fff;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 22.4px */
+            text-decoration: none;
+            @include for-size(tablet) {
+              color: #fff;
+              text-align: center;
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; /* 22.4px */
+            }
+          }
+        }
+
+        .staticts {
+          display: flex;
+          gap: 30px;
+          .one {
+            p {
+              &:nth-child(1) {
+                color: var(--White, #fff);
+
+                /* H4 - Space Mono */
+                font-family: Work Sans;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 39.2px */
+                text-transform: capitalize;
+              }
+
+              &:nth-child(2) {
+                color: var(--White, #fff);
+                font-family: Work Sans;
+                font-size: 23.99px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 38.384px */
+                text-transform: capitalize;
+              }
+
+              @include for-size(tablet) {
+                &:nth-child(1) {
+                  color: var(--White, #fff);
+
+                  /* H5 - Space Mono */
+                  font-family: Space Mono;
+                  font-size: 22px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 160%; /* 35.2px */
+                  text-transform: capitalize;
+                }
+
+                &:nth-child(2) {
+                  color: var(--White, #fff);
+
+                  /* Base(Body) - Work Sans */
+                  font-family: Work Sans;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%; /* 22.4px */
+                }
+              }
+
+              @include for-size(mobile) {
+                &:nth-child(1) {
+                  color: var(--White, #fff);
+
+                  /* H5 - Space Mono */
+                  font-family: Space Mono;
+                  font-size: 22px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 160%; /* 35.2px */
+                  text-transform: capitalize;
+                }
+
+                &:nth-child(2) {
+                  color: var(--White, #fff);
+
+                  /* Base(Body) - Work Sans */
+                  font-family: Work Sans;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%; /* 22.4px */
+                }
+              }
+            }
+          }
+
+          .two {
+            p {
+              &:nth-child(1) {
+                color: var(--White, #fff);
+
+                /* H4 - Space Mono */
+                font-family: Work Sans;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 39.2px */
+                text-transform: capitalize;
+              }
+
+              &:nth-child(2) {
+                color: var(--White, #fff);
+                font-family: Work Sans;
+                font-size: 23.99px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 38.384px */
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          .three {
+            p {
+              &:nth-child(1) {
+                color: var(--White, #fff);
+
+                /* H4 - Space Mono */
+                font-family: Work Sans;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 39.2px */
+                text-transform: capitalize;
+              }
+
+              &:nth-child(2) {
+                color: var(--White, #fff);
+                font-family: Work Sans;
+                font-size: 23.99px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 38.384px */
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          @include for-size(tablet) {
+            color: var(--White, #fff);
+
+            /* H5 - Space Mono */
+            font-family: Space Mono;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .right {
+        img {
+          width: 510px;
+          @include for-size(tablet) {
+            width: 330px;
+          }
+          @include for-size(mobile) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

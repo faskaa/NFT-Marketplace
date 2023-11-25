@@ -1,0 +1,36 @@
+body {
+  background: var(--Background, #2b2b2b);
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  .main {
+    // margin: auto;
+
+    .container {
+      width: 1050px;
+      margin: auto;
+
+      @include for-size(tablet) {
+        width: 834px;
+        
+      }
+
+      @include for-size(mobile) {
+        width: 375px;
+      }
+    }
+
+    // .main-header {
+    // }
+
+    // .main-content {
+    //   // margin: auto;
+    // }
+
+    // .main-trending{
+
+    // }
+  }
+}

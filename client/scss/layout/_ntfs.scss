@@ -1,0 +1,115 @@
+.wrapper {
+  .main {
+    .nft-wrapper {
+      .nft-top-text {
+        display: flex;
+        align-items: center;
+        .left {
+          display: flex;
+          flex-direction: column;
+          width: 763px;
+          span {
+            &:nth-child(1) {
+              color: var(--White, #fff);
+
+              /* H3 - Work Sans */
+              font-family: Work Sans;
+              font-size: 38px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 120%; /* 45.6px */
+              text-transform: capitalize;
+            }
+            &:nth-child(2) {
+              color: var(--White, #fff);
+
+              /* Body Text- Work Sans */
+              font-family: Work Sans;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 160%; /* 35.2px */
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .right {
+          button {
+            display: flex;
+            height: 60px;
+            padding: 0px 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            border: 2px solid var(--Call-to-Action, #a259ff);
+            background-color: transparent;
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+
+            a {
+              color: #fff;
+              text-align: center;
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; /* 22.4px */
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+            }
+          }
+        }
+      }
+
+      .nfts {
+        .nft {
+          width: 330px;
+          height: 469px;
+          border-radius: 20px;
+          background: #3b3b3b;
+          position: relative;
+
+          .nft-top {
+            img {
+              position: absolute;
+            }
+          }
+
+          .nft-bottom {
+            display: flex;
+            height: 469px;
+            flex-direction: column;
+            align-items: center;
+            flex: 1 0 0;
+            span {
+            }
+
+            #mdl {
+              position: relative;
+
+              img {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 120px;
+                background: url(<path-to-image>),
+                  lightgray 50% / cover no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

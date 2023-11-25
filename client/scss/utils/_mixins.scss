@@ -1,0 +1,27 @@
+// @mixin navbar-container(){
+//     padding: 20px 50px;
+// }
+
+// @mixin navbar-container-tablet(){
+//     padding: 15px 50px;
+// }
+
+// @mixin content-container(){
+//     padding: 80px 195px;
+// }
+// @mixin content-container-tablet(){
+//     padding: 80px 195px;
+// }
+
+@mixin for-size($screen){
+    @if $screen == tablet {
+        @media screen and (max-width : $desktop-container-width){
+            @content
+        }
+    };
+    @if  $screen == mobile {
+        @media screen and (max-width : $tablet-container-width){
+            @content
+        }
+    }
+};

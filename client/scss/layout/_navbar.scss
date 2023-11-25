@@ -1,0 +1,99 @@
+.wrapper {
+  // .container{
+
+  //   width: 1280px;
+
+  //   @include for-size(tablet){
+  //     width: 834px;
+  //   }
+  // }
+  .main {
+    .main-header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          gap: 10px;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+
+          img {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+
+            @include for-size(tablet) {
+              width: 24px;
+              height: 24px;
+              flex-shrink: 0;
+            }
+          }
+          span {
+            color: white;
+            font-size: 25px;
+            @include for-size(tablet) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        a {
+          display: flex;
+          height: 46px;
+          padding: 0px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          color: #fff;
+          text-align: center;
+          font-family: Work Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%; /* 22.4px */
+          text-decoration: none;
+          @include for-size(tablet) {
+            display: none;
+          }
+
+          &:nth-child(4) {
+            display: flex;
+            height: 60px;
+            padding: 0px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            background: var(--Call-to-Action, #a259ff);
+            @include for-size(tablet) {
+              display: none;
+            }
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          display: none;
+          @include for-size(tablet) {
+            display: initial;
+          }
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
