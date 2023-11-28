@@ -1,0 +1,166 @@
+.wrapper {
+  .main {
+    .how-it-work-wrapper {
+      padding: 30px 0px 80px 0px;
+      .text-area {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 48px;
+        margin-top: 38px;
+        @include for-size(tablet) {
+        }
+
+        @include for-size(mobile) {
+        }
+        span {
+          &:nth-child(1) {
+            color: var(--White, #fff);
+
+            /* H3 - Work Sans */
+            font-family: Work Sans;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 45.6px */
+            text-transform: capitalize;
+            @include for-size(tablet) {
+              color: var(--White, #fff);
+
+              /* H4 - Work Sans */
+              font-family: Work Sans;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; /* 39.2px */
+              text-transform: capitalize;
+            }
+
+            @include for-size(mobile) {
+              color: var(--White, #fff);
+
+              /* H4 - Work Sans */
+              font-family: Work Sans;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; /* 39.2px */
+              text-transform: capitalize;
+            }
+          }
+
+          &:nth-child(2) {
+            color: var(--White, #fff);
+
+            /* Body Text- Work Sans */
+            font-family: Work Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+            @include for-size(tablet) {
+              color: var(--White, #fff);
+
+              /* Base(Body) - Work Sans */
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 22.4px */
+            }
+
+            @include for-size(mobile) {
+              color: var(--White, #fff);
+
+              /* Base(Body) - Work Sans */
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 22.4px */
+            }
+          }
+        }
+      }
+
+      .works {
+        display: flex;
+        gap: 30px;
+        @include for-size(tablet) {
+        }
+
+        @include for-size(mobile) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .work {
+          display: flex;
+          flex-direction: column;
+          width: 330px;
+          padding: 10px 30px 30px 30px;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          border-radius: 20px;
+          background: var(--Background---Secondary, #3b3b3b);
+          @include for-size(tablet) {
+            display: flex;
+            padding: 10px 20px 30px 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex: 1 0 0;
+            align-self: stretch;
+          }
+
+          @include for-size(mobile) {
+            display: flex;
+            padding: 40px 195px;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            align-self: stretch;
+            
+          }
+          span {
+            &:nth-child(2) {
+              color: #fff;
+              text-align: center;
+
+              /* H5 - Work Sans */
+              font-family: Work Sans;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; /* 30.8px */
+              text-transform: capitalize;
+              @include for-size(tablet) {
+              }
+
+              @include for-size(mobile) {
+              }
+            }
+            &:nth-child(3) {
+              color: var(--White, #fff);
+              text-align: center;
+
+              /* Base(Body) - Work Sans */
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 22.4px */
+              @include for-size(tablet) {
+              }
+
+              @include for-size(mobile) {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

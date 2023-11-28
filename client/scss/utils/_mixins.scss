@@ -13,15 +13,29 @@
 //     padding: 80px 195px;
 // }
 
-@mixin for-size($screen){
-    @if $screen == tablet {
-        @media screen and (max-width : $desktop-container-width){
-            @content
-        }
-    };
-    @if  $screen == mobile {
-        @media screen and (max-width : $tablet-container-width){
-            @content
-        }
+@mixin for-size($screen) {
+  @if $screen == tablet {
+    @media screen and (max-width: $desktop-container-width) {
+      @content;
     }
-};
+  }
+  @if $screen == mobile {
+    @media screen and (max-width: $tablet-container-width) {
+      @content;
+    }
+  }
+}
+
+@mixin container() {
+  width: 1050px;
+  margin: auto;
+  @include for-size(tablet) {
+    width: 834px;
+    margin: auto;
+  }
+
+  @include for-size(mobile) {
+    width: 375px;
+    margin: auto    ;
+  }
+}

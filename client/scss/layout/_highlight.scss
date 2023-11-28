@@ -1,0 +1,13 @@
+.wrapper {
+  .main {
+    .highlight-wrapper {
+      img {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+      }
+    }
+  }
+}
