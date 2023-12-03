@@ -1,0 +1,422 @@
+footer {
+    //   display: flex;
+    padding: 40px 300px;
+    //   flex-direction: column;
+    // align-items: center;
+    gap: 60px;
+    align-self: stretch;
+    background: var(--Background---Secondary, #3b3b3b);
+    // margin-top: 80px;
+    
+    
+    @include for-size(tablet){
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include for-size(mobile){
+
+
+    }
+
+    .top {
+      display: flex;
+      gap: 70px;
+      margin-bottom: 30px;
+      // flex-direction: column;
+      @include for-size(tablet){
+
+      }
+
+      @include for-size(mobile){
+
+        
+      }
+
+      .left {
+        display: flex;
+        width: 327.414px;
+        padding-right: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        @include for-size(tablet){
+
+        }
+  
+        @include for-size(mobile){
+  
+          
+        }
+        //   gap: 30px;
+
+          .contacts{
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+
+              a{
+                  text-decoration: none;
+                  @include for-size(tablet){
+
+                  }
+            
+                  @include for-size(mobile){
+            
+                    
+                  }
+              }
+          }        
+
+        .left-top {
+          a {
+            display: flex;
+            gap: 17px;
+            margin-bottom: 30px;
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+          
+        }
+
+        span {
+          @include for-size(tablet){
+
+          }
+    
+          @include for-size(mobile){
+    
+            
+          }
+          &:nth-child(2) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+            margin-bottom: 20px;  @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+
+          &:nth-child(3) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+            margin-bottom: 15px;
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+        }
+      }
+
+      .middle {
+        display: flex;
+        width: 240px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+
+        @include for-size(tablet){
+
+        }
+  
+        @include for-size(mobile){
+  
+          
+        }
+
+        span {
+          &:nth-child(1) {
+            color: #fff;
+
+            /* H5 - Space Mono */
+            font-family: Space Mono;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+          &:nth-child(2) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+          &:nth-child(3) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+          &:nth-child(4) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+
+        @include for-size(tablet){
+
+        }
+  
+        @include for-size(mobile){
+  
+          
+        }
+
+        span {
+          &:nth-child(1) {
+            color: #fff;
+
+            /* H5 - Space Mono */
+            font-family: Space Mono;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+          &:nth-child(2) {
+            color: #ccc;
+
+            /* Base(Body) - Work Sans */
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+        }
+
+        .email-area {
+          display: flex;
+          height: 60px;
+          // padding: 16px 0px 16px 20px;
+          align-items: center;
+          gap: 12px;
+          justify-content: end;
+          //   align-self: stretch;
+
+          @include for-size(tablet){
+
+          }
+    
+          @include for-size(mobile){
+    
+            
+          }
+          input {
+            position: relative;
+            display: flex;
+            height: 60px;
+            padding: 16px 0px 16px 20px;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            background: var(--Text, #fff);
+            border: none;
+            width: 405px;
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+
+            // align-self: stretch;
+            &::placeholder {
+              color: var(--Background, #2b2b2b);
+
+              /* Base(Body) - Work Sans */
+              font-family: Work Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 22.4px */
+              @include for-size(tablet){
+
+              }
+        
+              @include for-size(mobile){
+        
+                
+              }
+            }
+          }
+          button {
+            position: absolute;
+            display: flex;
+            height: 60px;
+            padding: 0px 50px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+            border-radius: 20px;
+            background: var(--Call-to-Action, #a259ff);
+            border: none;
+            //   left: 561px;
+            //   right: 331px;
+            color: #fff;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 22.4px */
+            @include for-size(tablet){
+
+            }
+      
+            @include for-size(mobile){
+      
+              
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      div {
+        width: 100%;
+        height: 1px;
+        background: #858584;
+        margin-bottom: 20px;
+        @include for-size(tablet){
+
+        }
+  
+        @include for-size(mobile){
+  
+          
+        }
+      }
+
+      span {
+        color: #ccc;
+
+        /* Caption - Work Sans */
+        font-family: Work Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 13.2px */
+        @include for-size(tablet){
+
+        }
+  
+        @include for-size(mobile){
+  
+          
+        }
+      }
+    }
+  }

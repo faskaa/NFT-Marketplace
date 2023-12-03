@@ -1,0 +1,76 @@
+.wallet-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+
+  .left {
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .spans {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+      width: 460px;
+
+      span {
+        &:nth-child(1) {
+          color: var(--White, #fff);
+
+          /* H2 - Work Sans */
+          font-family: Work Sans;
+          font-size: 51px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 110%; /* 56.1px */
+          text-transform: capitalize;
+        }
+
+        &:nth-child(2) {
+          color: var(--White, #fff);
+          font-family: Work Sans;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 35.2px */
+        }
+      }
+    }
+
+    .wallet-area {
+      display: flex;
+      width: 320px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      button {
+        cursor: pointer;
+        display: flex;
+        height: 72px;
+        padding: 0px 20px 0px 40px;
+        align-items: center;
+        gap: 20px;
+        align-self: stretch;
+        border-radius: 20px;
+        border: 1px solid var(--Call-to-Action, #a259ff);
+        background: var(--Background---Secondary, #3b3b3b);
+        color: var(--White, #fff);
+
+        /* H5 - Work Sans */
+        font-family: Work Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 30.8px */
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -16,6 +16,10 @@
 
       .left {
         a {
+          transition: 0.6s;
+          &:hover {
+            opacity: 0.2;
+          }
           display: flex;
           align-items: center;
           text-decoration: none;
@@ -41,8 +45,6 @@
               font-size: 20px;
             }
           }
-
-      
         }
       }
 
@@ -50,6 +52,10 @@
         display: flex;
         align-items: center;
         a {
+          transition: 0.6s;
+          &:hover {
+            opacity: 0.2;
+          }
           display: flex;
           height: 46px;
           padding: 0px 20px;

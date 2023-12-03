@@ -83,22 +83,21 @@
         grid-column-gap: 30px;
         grid-row-gap: 30px;
         align-items: center;
-        
-        
-        @include for-size(tablet){
-            display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            // grid-template-rows: repeat(1, 1fr);
-            align-items: center;
-            justify-content: center;
+
+        @include for-size(tablet) {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          // grid-template-rows: repeat(1, 1fr);
+          align-items: center;
+          justify-content: center;
         }
 
-        @include for-size(mobile){
-            display: grid;
-            grid-template-columns: repeat(1, 2fr);
-            // grid-template-rows: repeat(1, 1fr);
-            align-items: center;
-            justify-content: center;
+        @include for-size(mobile) {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          // grid-template-rows: repeat(1, 1fr);
+          align-items: center;
+          justify-content: center;
         }
         .card {
           display: flex;
@@ -110,7 +109,7 @@
           border-radius: 20px;
           background: #3b3b3b;
           position: relative;
-          
+
           #id {
             display: flex;
             width: 30px;
@@ -123,6 +122,15 @@
             background: var(--Background, #2b2b2b);
             justify-content: center;
             align-items: center;
+            color: var(--caption-label-text, #858584);
+            text-align: center;
+
+            /* Base (Body) - Space Mono */
+            font-family: Space Mono;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
           }
 
           img {
@@ -149,6 +157,8 @@
             text-transform: capitalize;
           }
           .total-sales {
+            display: flex;
+            gap: 10px;
             span {
               &:nth-child(1) {
                 color: #fff;
@@ -163,6 +173,17 @@
                 line-height: 140%; /* 22.4px */
               }
               &:nth-child(2) {
+                color: var(--Text, #fff);
+
+                /* Base (Body) - Space Mono */
+                font-family: Space Mono;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 22.4px */
+              }
+
+              &:nth-child(3) {
                 color: var(--Text, #fff);
 
                 /* Base (Body) - Space Mono */

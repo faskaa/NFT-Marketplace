@@ -14,7 +14,6 @@ body {
 
       @include for-size(tablet) {
         width: 834px;
-        
       }
 
       @include for-size(mobile) {
@@ -22,15 +21,92 @@ body {
       }
     }
 
-    // .main-header {
-    // }
+    .highlight-wrapper {
+      // background-image: url("https://s3-alpha-sig.figma.com/img/a6f4/3f93/50c73503d13e1fe1a0e3277804ef1192?Expires=1702252800&Signature=TU3yBl6auujEinbYj67adkuj~rRuBkhYIRTfxzjpWLABaHQT8hH2u8WQsxKZahGrrZHxSEcxqTm6KKiRJ6QNuA~U8AwFzVjxxGd~0JYqQRdhDhirAtW02KvZwzEf8pTHJN8WNwebh89iDJ8vYK21nHWs2-GbmrJqSNrWBp6VfL8BGUXu1OjyntlWG3GCjNklkYIn8UaYqddmdZtx8dtbh9XQjmrBb8qHqqVc9V5TWVVPZxy-y0FXPfjftLSQp1ciZQbs~uQ1bzn65xkCrOGbH2eFUEOIE0jJlMVR973M-5FP6YbefPOZBFLTgxAfTKE7e9M4F22F7Tpsc~HRhVYwpw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+      // width: 1280px;
+      // height: 640px;
+      // background-repeat: no-repeat;
+      // object-fit: contain;
+      position: relative;
+      button {
+        &:nth-child(2) {
+          position: absolute;
+          display: flex;
+          padding: 10px 20px;
+          align-items: center;
+          gap: 12px;
+          border-radius: 20px;
+          background: #3b3b3b;
+          border: none;
+          color: #fff;
+          bottom: 280px;
+          left: 173px;
 
-    // .main-content {
-    //   // margin: auto;
-    // }
+          /* Base(Body) - Work Sans */
+          font-family: Work Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%; /* 22.4px */
+        }
 
-    // .main-trending{
+        &:nth-child(4) {
+          position: absolute;
+          bottom: 70px;
+          left: 173px;
+          display: flex;
+          height: 60px;
+          padding: 22px 50px;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 20px;
+          background: #3b3b3b;
+          border-radius: 20px;
+          background: var(--Text, #fff);
+          border: none;
+          a {
+            color: var(--Background, #2b2b2b);
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 22.4px */
+            display: flex;
+            text-decoration: none;
+            gap: 10px;
 
-    // }
+            img {
+              background-color: transparent;
+            }
+          }
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+          border-radius: 120px;
+          background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: 190px;
+        left: 173px;
+        color: #fff;
+
+        /* H2 - Work Sans */
+        font-family: Work Sans;
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 56.1px */
+        text-transform: capitalize;
+      }
+
+
+    }
   }
 }
